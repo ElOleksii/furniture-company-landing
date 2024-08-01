@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, picture, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+* {
+  font-family: Poppins, sans-serif;
+}
+
+.first-screen {
+  width: 100wh;
+  color: #fff;
+  background-image: url("hero-bg.9dcf1752.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.navbar__logo {
+  letter-spacing: .01em;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.navbar__pannel {
+  align-items: center;
+  display: flex;
+}
+
+.navbar__bug-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.navbar__bug {
+  cursor: pointer;
+}
+
+.navbar__bug-counter {
+  background-color: #e58411;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 25px;
+  display: flex;
+  position: absolute;
+  right: -5px;
+}
+
+.navbar .mobile-nav__menu {
+  color: #1e1e1e;
+  justify-content: column;
+  background-color: #fff;
+  row-gap: 16px;
+  padding: 24px 71px 24px 24px;
+  display: flex;
+  position: absolute;
+  top: 86px;
+  right: -500px;
+}
+
+.navbar .mobile-nav__menu-item {
+  font-family: Gilroy, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.navbar .burger-menu {
+  cursor: pointer;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 30px;
+  display: flex;
+}
+
+.navbar .burger-menu__line {
+  background-color: #fff;
+  border-radius: 1px;
+  width: 30px;
+  height: 2px;
+}
+
+.hero {
+  text-align: center;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 115px;
+  display: flex;
+}
+
+.hero__title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.hero__text {
+  opacity: .8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.hero__input {
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #ffffff26;
+  border: 1px solid #fff9;
+  border-radius: 42px;
+  max-width: 345px;
+  height: 56px;
+  padding-left: 20px;
+  padding-right: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.hero__input::placeholder {
+  color: #fff;
+  opacity: .8;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.hero__input:focus {
+  outline: none;
+}
+
+.hero__btn {
+  background-color: #e58411;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+/*# sourceMappingURL=index.8368275b.css.map */

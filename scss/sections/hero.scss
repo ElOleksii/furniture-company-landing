@@ -1,0 +1,134 @@
+.first-screen {
+  background-image: url("../img/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100wh;
+  height: 100vh;
+  color: $white;
+  padding-top: 40px;
+}
+
+.navbar {
+  @include flex(center, space-between);
+
+  &__logo {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+  }
+  &__pannel {
+    @include flex(center);
+  }
+  &__bug-wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  &__bug {
+    cursor: pointer;
+
+    &-counter {
+      position: relative;
+      background-color: $orange;
+      display: flex;
+      @include flex(center, center);
+      width: 20px;
+      height: 25px;
+      border-radius: 50%;
+      position: absolute;
+      right: -5px;
+    }
+  }
+
+  .mobile-nav__menu {
+    display: none;
+    position: absolute;
+    background-color: $white;
+    color: $text-black;
+    right: -500px;
+    top: 86px;
+    @include flex(initial, column, initial);
+    row-gap: 16px;
+    padding: 24px 71px 24px 24px;
+
+    &-item {
+      font-family: "Gilroy", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    margin-left: 30px;
+
+    &__line {
+      width: 30px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: $white;
+    }
+  }
+  .burger-menu--active {
+  }
+}
+
+.hero {
+  margin-top: 115px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  text-align: center;
+
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.8;
+  }
+  &__input {
+    border: 1px solid rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.15);
+    height: 56px;
+    box-sizing: border-box;
+    border-radius: 42px;
+    padding-left: 20px;
+    padding-right: 8px;
+    max-width: 345px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+
+    &::placeholder {
+      color: $white;
+      opacity: 0.8;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    background-color: $orange;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+  }
+}
