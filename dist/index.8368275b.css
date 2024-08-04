@@ -57,6 +57,7 @@ a {
 
 .first-screen {
   width: 100wh;
+  box-sizing: border-box;
   color: #fff;
   background-image: url("hero-bg.9dcf1752.jpg");
   background-position: center;
@@ -64,6 +65,10 @@ a {
   background-size: cover;
   height: 100vh;
   padding-top: 40px;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -107,8 +112,8 @@ a {
 
 .navbar .mobile-nav__menu {
   color: #1e1e1e;
-  justify-content: column;
   background-color: #fff;
+  flex-direction: column;
   row-gap: 16px;
   padding: 24px 71px 24px 24px;
   display: flex;
@@ -124,6 +129,10 @@ a {
   line-height: 24px;
 }
 
+.navbar .mobile-nav__menu-item:hover {
+  scale: 1.05;
+}
+
 .navbar .burger-menu {
   cursor: pointer;
   flex-direction: column;
@@ -137,6 +146,25 @@ a {
   border-radius: 1px;
   width: 30px;
   height: 2px;
+  transition: transform .5s;
+}
+
+.navbar .burger-menu--active .burger-menu__line:first-child {
+  transform: translateY(5px)rotate(45deg);
+}
+
+.navbar .burger-menu--active .burger-menu__line:last-child {
+  transform: translateY(-5px)rotate(315deg);
+}
+
+.navbar .burger-menu--active .burger-menu__line:nth-child(2) {
+  opacity: 0;
+  display: none;
+  transform: translateX(350px);
+}
+
+.navbar .mobile-nav__menu--active {
+  right: 20px;
 }
 
 .hero {
@@ -188,6 +216,7 @@ a {
 }
 
 .hero__btn {
+  cursor: pointer;
   background-color: #e58411;
   border: none;
   border-radius: 50%;
