@@ -90,12 +90,9 @@ html {
 }
 
 .navbar__bug-wrapper {
+  cursor: pointer;
   display: flex;
   position: relative;
-}
-
-.navbar__bug {
-  cursor: pointer;
 }
 
 .navbar__bug-counter {
@@ -116,6 +113,7 @@ html {
   flex-direction: column;
   row-gap: 16px;
   padding: 24px 71px 24px 24px;
+  transition: right .3s;
   display: flex;
   position: absolute;
   top: 86px;
@@ -189,6 +187,7 @@ html {
 }
 
 .hero__input {
+  backdrop-filter: blur(5px);
   box-sizing: border-box;
   color: #fff;
   background-color: #ffffff26;
@@ -201,6 +200,7 @@ html {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
+  position: relative;
 }
 
 .hero__input::placeholder {
